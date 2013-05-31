@@ -1,0 +1,104 @@
+@font-color: #00AAFF;
+@font-name: "Arial";
+
+h1 {
+	color: @font-color;
+	font-family: @font-name;
+	font-size: 3.6em;
+	margin: 0;
+}
+
+h2 {
+	color: @font-color;
+	font-family: @font-name;
+	font-size: 2.5em;
+	margin: 0;
+}
+
+h3 {
+	border-bottom: 3px solid @font-color;
+	color: @font-color;
+	font-family: @font-name;
+	font-size: 1.9em;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+h4 {
+	color: @font-color;
+	font-family: @font-name;
+	font-size: 1.4em;
+	margin: 0;
+}
+
+h5 {
+	color: @font-color;
+	font-family: @font-name;
+	font-size: 1.2em;
+	margin: 0;
+}
+
+h6 {
+	color: @font-color;
+	font-family: @font-name;
+	font-size: 1em;
+	margin: 0;
+}
+
+p {
+	color: @font-color;
+	font-family: @font-name;
+	font-size: 0.85em;
+	margin: 0;
+}
+
+.page {
+	margin: 20px auto;
+	overflow: hidden;
+	width: 100%;
+
+	.header {
+		border-image: -webkit-linear-gradient(left, @font-color, #000000) 0 0 1 0;
+		border-width: 4px;
+		padding-left: 20px;
+		padding-bottom: 8px;
+	}
+
+	.sidebar {
+		float: left;
+		//left: -500px; TODO
+		padding: 20px 10px 0 10px;
+		padding-right: 10px;
+		position: relative;
+		width: 170px;
+	}
+
+	.main {
+		border-image: -webkit-linear-gradient(top, @font-color, #000000) 0 0 0 1;
+		border-width: 4px;
+		border-top: 0;
+		margin-left: 190px;
+		padding: 20px;
+
+		.page-title {
+			border-bottom: 3px solid @font-color;
+			display: inline-block;
+			margin-bottom: 10px;
+			width: 100%;
+
+			div {
+				border: none;
+				float: left;
+			}
+
+			a {
+				float: right;
+				margin-right: 10px;
+			}
+		}
+
+		.rest-of-body {
+	
+		}
+	}
+}
